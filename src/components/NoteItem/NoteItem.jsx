@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 
 function NoteItem({ note, onDelete }) {
   return (
-    <li>
+    <li className="item">
       <p className="item__description">{note}</p>
-      <button onClick={onDelete}>Del</button>
+      <button className="item__delNoteBtn" onClick={onDelete}>Del</button>
     </li>
   );
 }

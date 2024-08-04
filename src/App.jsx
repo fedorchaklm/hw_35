@@ -25,8 +25,9 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <form onSubmit={handleSubmit}>
+        <h2>Your notesList</h2>
         <input
           type="text"
           name="userNote"
@@ -37,7 +38,7 @@ function App() {
         <button type="submit">Add</button>
       </form>
       <NoteList>
-        {notes.length === 0 ? <p>Нотаток немає</p> :
+        {notes.length === 0 ? <p className="notes-wrap">Нотаток немає</p> :
           notes.map((note, index) => <NoteItem note={note} key={index} onDelete={() => handleDelete(index)} />)}
       </NoteList>
     </div>
