@@ -12,32 +12,7 @@ form {
 
 input {
   outline: none;
-  border: 2px solid #9d97ec;
+  border: 2px solid var(--main-color);
   padding: 0.6em 1.2em;
 }
 
-.black {
-  color: #000;
-}
-
-.note-list {
-  color: #000;
-  list-style: none;
-  padding: 10px 5px;
-  border: 2px solid #9d97ec;
-}
-
-.note-list li {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 10px;
-  padding-inline: 5px;
-  border: 2px solid #9d97ec;
-}
-
-.item__descr {
-  padding: 1px 15px;
-}
